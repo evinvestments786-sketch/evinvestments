@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eagle View Investment</title>
+<link rel="icon" type="image/x-icon" href="logo.png" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        // "primary": "#0A2342",
+                        "primary": "#003B70",
+                        "secondary": "#B6943C",
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#111418",
+                        "text-light": "#333333",
+                        "text-dark": "#EAEAEA",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "heading": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="px-4 sm:px-6 md:px-8 lg:px-20 mx-auto max-w-7xl">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-700 py-3 sm:py-4">
+<div class="flex items-center gap-2 sm:gap-4 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary dark:text-secondary">
+<div class="flex items-center gap-2 sm:gap-4">
+          <img src="logo.png" class="w-32 sm:w-36 md:w-40 lg:w-44" alt="Logo">
+        </div>
+<!-- <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g> -->
+<defs>
+<clippath id="clip0_6_330">
+<rect fill="white" height="48" width="48"></rect>
+</clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-lg sm:text-xl font-bold font-heading">Eagle View Investment</h2>
+</div>
+
+
+<nav class="hidden md:flex flex-1 justify-center items-center gap-4 lg:gap-8">
+<a class="text-xs sm:text-sm font-medium text-primary dark:text-secondary font-bold" href="#">Home</a>
+<a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="strategies.html">Strategies</a>
+<a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="how_it_works.html">How It Works</a>
+<a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="track_record_&_case_studies.html">Track Record</a>
+<a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="about.html">About</a>
+<a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="contact.html">Contact</a>
+</nav>
+
+
+<!-- <div class="hidden md:flex items-center gap-1 sm:gap-2">
+
+<a href="contact.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 sm:h-10 px-3 sm:px-4 bg-gray-200 dark:bg-gray-700 text-[#1f2937] dark:text-white text-xs sm:text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-gray-600">Login</a>
+<a href="contact.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 sm:h-10 px-3 sm:px-4 bg-primary text-white text-xs sm:text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">Sign Up</a>
+</div> -->
+<button class="md:hidden flex items-center justify-center text-[#1f2937] dark:text-white p-2">
+<span class="material-symbols-outlined text-xl">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="px-4 py-5 sm:px-6 md:px-8 lg:px-10">
+<div class="layout-content-container flex flex-col max-w-[960px] mx-auto">
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="flex min-h-[400px] sm:min-h-[480px] flex-col gap-4 sm:gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4 sm:p-6" data-alt="Abstract gradient background with blue and dark grey tones" style='background-image: linear-gradient(rgba(17, 20, 24, 0.6) 0%, rgba(17, 20, 24, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAYTYZ5AMh2CMruSCHLaczh9YpA_Pjh364GAE1QLkZEV3-MpyqgdApZVl8ZDAp9RHVoeL9a00ohzvlrrS-Vdh8p26_HB7TlfKWnt50U1bZouTJI1GdLFFSDQldc9XElGa_8pPWDrJ1gacsw0X_CaGeHBHF45hWgK1WM-FTbEcOVt-5B1CzDDTElDSQ0Ow2-wqibRCR5dbRt-wopDocYwtwXz3w3ulKu73uk-Tor07LVox0tCKvA6QZildFRNxoUgVbyzZAUPyFF1gC_");'>
+<div class="flex flex-col gap-3 sm:gap-4 text-center max-w-3xl px-4">
+<h1 class="text-white text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-tight font-serif @[480px]:text-5xl @[480px]:leading-tight">
+                                            Income strategies designed for stability—target 9%–20% p.a., paid quarterly
+                                        </h1>
+<h2 class="text-white/90 text-base sm:text-lg font-normal leading-normal @[480px]:text-xl @[480px]:leading-normal">
+                                            Institution-grade due diligence, real-asset exposure, and transparent reporting from Dubai &amp; London.
+                                        </h2>
+</div>
+<div class="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 sm:h-12 px-4 sm:px-5 bg-primary text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Request Term Sheet</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 sm:h-12 px-4 sm:px-5 border border-white/50 text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em] bg-transparent hover:bg-white/10">
+<span class="truncate">Speak to an Adviser</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="py-8 sm:py-12 md:py-16">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl sm:text-3xl md:text-4xl">groups</span>
+<p class="text-xs sm:text-sm font-medium">Decades of combined investment experience</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl sm:text-3xl md:text-4xl">account_balance</span>
+<p class="text-xs sm:text-sm font-medium">Institutional governance</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl sm:text-3xl md:text-4xl">task</span>
+<p class="text-xs sm:text-sm font-medium">Quarterly audits</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl sm:text-3xl md:text-4xl">verified_user</span>
+<p class="text-xs sm:text-sm font-medium">Bank-grade custody</p>
+</div>
+</div>
+</div>
+<div class="py-8 sm:py-12 md:py-16 border-t border-[#e5e7eb] dark:border-[#283039]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+<div class="flex flex-col gap-2 bg-[#f9fafb] dark:bg-[#1c2127] p-4 sm:p-6 rounded-lg border border-[#e5e7eb] dark:border-[#3b4754]">
+<h3 class="text-lg sm:text-xl font-bold font-serif text-[#1f2937] dark:text-white">Income Strategy</h3>
+<p class="text-sm sm:text-base font-normal leading-normal">Targeting consistent quarterly income through a diversified portfolio of real assets.</p>
+<a class="text-primary font-bold mt-2 text-sm sm:text-base" href="#">Learn More →</a>
+</div>
+<div class="flex flex-col gap-2 bg-[#f9fafb] dark:bg-[#1c2127] p-4 sm:p-6 rounded-lg border border-[#e5e7eb] dark:border-[#3b4754]">
+<h3 class="text-lg sm:text-xl font-bold font-serif text-[#1f2937] dark:text-white">Security-Collateralized Note</h3>
+<p class="text-sm sm:text-base font-normal leading-normal">A fixed-income product offering 100% security collateralization and predictable returns.</p>
+<a class="text-primary font-bold mt-2 text-sm sm:text-base" href="#">Learn More →</a>
+</div>
+<div class="flex flex-col gap-2 bg-[#f9fafb] dark:bg-[#1c2127] p-4 sm:p-6 rounded-lg border border-[#e5e7eb] dark:border-[#3b4754]">
+<h3 class="text-lg sm:text-xl font-bold font-serif text-[#1f2937] dark:text-white">Bespoke Mandates</h3>
+<p class="text-sm sm:text-base font-normal leading-normal">Custom-tailored investment solutions for institutional and high-net-worth clients.</p>
+<a class="text-primary font-bold mt-2 text-sm sm:text-base" href="#">Learn More →</a>
+</div>
+</div>
+</div>
+<div class="py-8 sm:py-12 md:py-16">
+<div class="flex flex-col gap-8 sm:gap-12">
+<div class="flex flex-col gap-3 sm:gap-4 text-center">
+<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-serif text-[#1f2937] dark:text-white">The Eagle View Advantage</h2>
+<p class="text-base sm:text-lg leading-normal max-w-3xl mx-auto">We combine decades of experience with institutional-grade systems to deliver superior risk-adjusted returns.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+<div class="flex gap-3 sm:gap-4">
+<span class="material-symbols-outlined text-primary text-2xl sm:text-3xl mt-1">trending_up</span>
+<div>
+<h4 class="text-base sm:text-lg font-bold text-[#1f2937] dark:text-white">Scale Discipline</h4>
+<p class="text-sm sm:text-base font-normal leading-normal">Our disciplined approach to scaling investments ensures we maintain our edge and deliver consistent performance.</p>
+</div>
+</div>
+<div class="flex gap-3 sm:gap-4">
+<span class="material-symbols-outlined text-primary text-2xl sm:text-3xl mt-1">shield</span>
+<div>
+<h4 class="text-base sm:text-lg font-bold text-[#1f2937] dark:text-white">Robust Risk Systems</h4>
+<p class="text-sm sm:text-base font-normal leading-normal">We employ sophisticated risk management systems to protect capital and optimize returns across all market conditions.</p>
+</div>
+</div>
+<div class="flex gap-3 sm:gap-4">
+<span class="material-symbols-outlined text-primary text-2xl sm:text-3xl mt-1">insights</span>
+<div>
+<h4 class="text-base sm:text-lg font-bold text-[#1f2937] dark:text-white">Deep Sector Expertise</h4>
+<p class="text-sm sm:text-base font-normal leading-normal">Our team possesses deep expertise in key sectors, enabling us to identify and capitalize on unique investment opportunities.</p>
+</div>
+</div>
+<div class="flex gap-3 sm:gap-4">
+<span class="material-symbols-outlined text-primary text-2xl sm:text-3xl mt-1">calculate</span>
+<div>
+<h4 class="text-base sm:text-lg font-bold text-[#1f2937] dark:text-white">Quant &amp; Macro Lens</h4>
+<p class="text-sm sm:text-base font-normal leading-normal">We leverage quantitative analysis and a macroeconomic perspective to inform our investment decisions and strategy.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-[#f9fafb] dark:bg-black/20 border-t border-[#e5e7eb] dark:border-b-[#283039]">
+<div class="max-w-[960px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-6 sm:py-8 md:py-10">
+<div class="flex flex-col gap-4 sm:gap-6 text-center">
+<div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+<a class="text-[#6b7280] dark:text-[#9dabb9] text-xs sm:text-sm font-normal leading-normal" href="#">Privacy Policy</a>
+<a class="text-[#6b7280] dark:text-[#9dabb9] text-xs sm:text-sm font-normal leading-normal" href="#">Terms of Service</a>
+<a class="text-[#6b7280] dark:text-[#9dabb9] text-xs sm:text-sm font-normal leading-normal" href="#">Contact Us</a>
+</div>
+<div class="flex justify-center gap-3 sm:gap-4">
+<a href="#">
+<svg aria-hidden="true" class="text-[#6b7280] dark:text-[#9dabb9] w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+<p class="text-[#6b7280] dark:text-[#9dabb9] text-xs font-normal leading-normal max-w-4xl mx-auto">
+                             Minimum investment AED 1.8M (or currency equivalent). For accredited investors only.
+                             © 2023 Eagle View Investment. All Rights Reserved. Important disclosures and legal information are available upon request. Investing involves risk, including the
+                             potential loss of principal. Target returns are not guaranteed.
+                        </p>
+</div>
+</div>
+</footer>
+</div>
+<div class="md:hidden fixed bottom-0 left-0 right-0 p-3 sm:p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-[#e5e7eb] dark:border-t-[#283039]">
+<button class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 sm:h-12 px-4 sm:px-5 bg-primary text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Request Term Sheet</span>
+</button>
+</div>
+</div>
+</body></html>

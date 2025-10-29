@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eagle View Investment - Investment Strategies</title>
+<link rel="icon" type="image/x-icon" href="logo.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003B70",
+                        "secondary": "#B6943C",
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#111418",
+                        "text-light": "#333333",
+                        "text-dark": "#EAEAEA",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "heading": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="px-4 sm:px-6 md:px-8 lg:px-20 mx-auto max-w-7xl">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-700 py-3 sm:py-4">
+<div class="flex items-center gap-2 sm:gap-4 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary dark:text-secondary">
+   <div class="flex items-center gap-2 sm:gap-4">
+          <img src="logo.png" class="w-32 sm:w-36 md:w-40 lg:w-44" alt="Logo">
+        </div>
+<!-- <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g> -->
+<!-- <defs>
+<clippath id="clip0_6_330">
+<rect fill="white" height="48" width="48"></rect>
+</clippath>
+</defs>
+</svg> -->
+</div>
+<h2 class="text-lg sm:text-xl font-bold font-heading">Eagle View Investment</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center items-center gap-4 lg:gap-8">
+<a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="home.html">Home</a>
+<a class="text-xs sm:text-sm text-primary dark:text-secondary font-bold" href="#">Strategies</a>
+<a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="how_it_works.html">How It Works</a>
+<a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="track_record_&_case_studies.html">Track Record</a>
+<a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="about.html">About</a>
+<a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="contact.html">Contact</a>
+</nav>
+<!-- <div class="hidden md:flex items-center gap-1 sm:gap-2">
+
+<a href="contact.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 sm:h-10 px-3 sm:px-4 bg-primary text-white text-xs sm:text-sm font-bold leading-normal tracking-wide hover:bg-primary/90">Login</a>
+<a href="contact.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 sm:h-10 px-3 sm:px-4 bg-gray-200 dark:bg-gray-700 text-text-light dark:text-text-dark text-xs sm:text-sm font-bold leading-normal tracking-wide hover:bg-gray-300 dark:hover:bg-gray-600">Sign Up</a>
+</div> -->
+<div class="md:hidden">
+<button class="material-symbols-outlined text-text-light dark:text-text-dark p-2 text-xl">menu</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="px-4 sm:px-6 md:px-8 lg:px-20 py-8 sm:py-12 md:py-16 mx-auto max-w-7xl">
+<div class="layout-content-container flex flex-col gap-8 sm:gap-12">
+<div class="flex flex-wrap justify-between items-center gap-4 sm:gap-6">
+<div class="flex flex-col gap-3 sm:gap-4 max-w-3xl">
+<p class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-text-light dark:text-text-dark">Our Investment Strategies</p>
+<p class="text-sm sm:text-base font-normal leading-normal text-gray-600 dark:text-gray-400">Explore our range of investment solutions, meticulously designed to meet your specific financial objectives with a focus on security, transparency, and consistent returns.</p>
+</div>
+</div>
+<!-- <div class="flex">
+<div class="flex w-full h-12 items-center justify-center rounded-lg bg-gray-200 dark:bg-gray-800 p-1.5">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-3 text-center has-[:checked]:bg-background-light has-[:checked]:dark:bg-background-dark has-[:checked]:shadow-md has-[:checked]:text-primary has-[:checked]:dark:text-secondary text-gray-600 dark:text-gray-400 text-sm font-semibold">
+<span class="truncate">Income Strategy</span>
+<input checked="" class="sr-only" name="strategy" type="radio"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-3 text-center has-[:checked]:bg-background-light has-[:checked]:dark:bg-background-dark has-[:checked]:shadow-md has-[:checked]:text-primary has-[:checked]:dark:text-secondary text-gray-600 dark:text-gray-400 text-sm font-semibold">
+<span class="truncate">Security-Collateralized Note</span>
+<input class="sr-only" name="strategy" type="radio"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-3 text-center has-[:checked]:bg-background-light has-[:checked]:dark:bg-background-dark has-[:checked]:shadow-md has-[:checked]:text-primary has-[:checked]:dark:text-secondary text-gray-600 dark:text-gray-400 text-sm font-semibold">
+<span class="truncate">Bespoke Mandates</span>
+<input class="sr-only" name="strategy" type="radio"/>
+</label>
+</div>
+</div> -->
+<!-- Income Strategy Section -->
+<div class="flex flex-col gap-6 sm:gap-8 pt-6 sm:pt-8">
+<h2 class="text-2xl sm:text-3xl font-bold font-heading text-text-light dark:text-text-dark">Income Strategy</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+<div class="bg-gray-100 dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<h3 class="text-base sm:text-lg font-bold text-primary dark:text-secondary mb-2">Target Return</h3>
+<p class="text-2xl sm:text-3xl font-bold">9%–20% <span class="text-lg sm:text-xl">p.a.</span></p>
+<p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">Paid Quarterly</p>
+</div>
+<div class="bg-gray-100 dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700 col-span-1 md:col-span-2">
+<h3 class="text-base sm:text-lg font-bold text-primary dark:text-secondary mb-2">Objective</h3>
+<p class="text-sm sm:text-base text-text-light dark:text-text-dark">Generate durable income streams from a diversified portfolio of asset-backed and cash-flowing exposures, minimizing volatility.</p>
+</div>
+<div class="bg-gray-100 dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<h3 class="text-base sm:text-lg font-bold text-primary dark:text-secondary mb-2">Instruments</h3>
+<p class="text-sm sm:text-base text-text-light dark:text-text-dark">Secured credit, revenue-linked notes, and income-generative real assets.</p>
+</div>
+<div class="bg-gray-100 dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<h3 class="text-base sm:text-lg font-bold text-primary dark:text-secondary mb-2">Liquidity</h3>
+<p class="text-sm sm:text-base text-text-light dark:text-text-dark">Quarterly distributions with structured redemption windows.</p>
+</div>
+<div class="bg-gray-100 dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<h3 class="text-base sm:text-lg font-bold text-primary dark:text-secondary mb-2">Fees</h3>
+<p class="text-sm sm:text-base text-text-light dark:text-text-dark">X% management fee, performance fee above Y% hurdle.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+<div class="bg-background-light dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<h3 class="text-base sm:text-lg font-bold mb-3">What drives yield?</h3>
+<ul class="space-y-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary dark:text-secondary text-sm sm:text-base mt-0.5">check_circle</span>Spread capture &amp; credit seniority</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary dark:text-secondary text-sm sm:text-base mt-0.5">check_circle</span>Robust collateral packages</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary dark:text-secondary text-sm sm:text-base mt-0.5">check_circle</span>Strict covenants &amp; controls</li>
+</ul>
+</div>
+<div class="bg-background-light dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<h3 class="text-base sm:text-lg font-bold mb-3">Downside controls</h3>
+<ul class="space-y-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary dark:text-secondary text-sm sm:text-base mt-0.5">check_circle</span>Loan-to-Value (LTV) limits</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary dark:text-secondary text-sm sm:text-base mt-0.5">check_circle</span>Capital reserves &amp; stress testing</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary dark:text-secondary text-sm sm:text-base mt-0.5">check_circle</span>Active covenant monitoring</li>
+</ul>
+</div>
+<div class="bg-background-light dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<h3 class="text-base sm:text-lg font-bold mb-3">Reporting &amp; Audit</h3>
+<ul class="space-y-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary dark:text-secondary text-sm sm:text-base mt-0.5">check_circle</span>Detailed quarterly statements</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary dark:text-secondary text-sm sm:text-base mt-0.5">check_circle</span>Regular audit cadence</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary dark:text-secondary text-sm sm:text-base mt-0.5">check_circle</span>Full transparency</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Security-Collateralized Note Section -->
+<div class="flex flex-col gap-6 sm:gap-8 pt-8 sm:pt-12 border-t border-gray-200 dark:border-gray-700">
+<h2 class="text-2xl sm:text-3xl font-bold font-heading text-text-light dark:text-text-dark">Security-Collateralized Note</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+<div class="flex flex-col gap-4 sm:gap-6">
+<div class="bg-gray-100 dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<h3 class="text-base sm:text-lg font-bold text-primary dark:text-secondary mb-2">Minimum Investment</h3>
+<p class="text-2xl sm:text-3xl font-bold">AED 1.8M+</p>
+</div>
+<div class="bg-gray-100 dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<h3 class="text-base sm:text-lg font-bold text-primary dark:text-secondary mb-2">Structure &amp; Payout</h3>
+<p class="text-sm sm:text-base text-text-light dark:text-text-dark">Secured by first-ranking collateral. Offers a fixed/target coupon, paid quarterly, with a tenor of 12–36 months.</p>
+</div>
+<div class="bg-gray-100 dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<h3 class="text-base sm:text-lg font-bold text-primary dark:text-secondary mb-2">Transparency</h3>
+<p class="text-sm sm:text-base text-text-light dark:text-text-dark">Full data room access and regular third-party confirmations to ensure complete clarity.</p>
+</div>
+</div>
+<div class="bg-gray-100 dark:bg-gray-800/50 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700 flex flex-col">
+<h3 class="text-base sm:text-lg font-bold text-primary dark:text-secondary mb-4">Collateral Stack &amp; Protections</h3>
+<div class="flex-grow flex flex-col justify-center items-center gap-3 sm:gap-4">
+<div class="w-full space-y-2">
+<div class="bg-primary/20 dark:bg-primary/30 p-2 sm:p-3 rounded-lg text-center">
+<p class="font-bold text-xs sm:text-sm text-primary dark:text-secondary">Enforcement Waterfall</p>
+</div>
+<div class="text-center text-xs font-bold text-gray-500 dark:text-gray-400">▲</div>
+<div class="bg-primary/20 dark:bg-primary/30 p-2 sm:p-3 rounded-lg text-center">
+<p class="font-bold text-xs sm:text-sm text-primary dark:text-secondary">Trustee &amp; Security Agent</p>
+</div>
+<div class="text-center text-xs font-bold text-gray-500 dark:text-gray-400">▲</div>
+<div class="bg-primary/20 dark:bg-primary/30 p-2 sm:p-3 rounded-lg text-center">
+<p class="font-bold text-xs sm:text-sm text-primary dark:text-secondary">SPV Ring-Fencing</p>
+</div>
+<div class="text-center text-xs font-bold text-gray-500 dark:text-gray-400">▲</div>
+<div class="bg-primary/20 dark:bg-primary/30 p-2 sm:p-3 rounded-lg text-center">
+<p class="font-bold text-xs sm:text-sm text-primary dark:text-secondary">Independent Valuation</p>
+</div>
+<div class="text-center text-xs font-bold text-gray-500 dark:text-gray-400">▲</div>
+<div class="bg-primary text-white p-3 sm:p-4 rounded-lg text-center shadow-lg">
+<p class="font-bold text-sm sm:text-base">First-Ranking Collateral</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-yellow-100/50 dark:bg-yellow-900/20 p-3 sm:p-4 rounded-lg border border-yellow-300 dark:border-yellow-700 flex items-start gap-3">
+<span class="material-symbols-outlined text-yellow-600 dark:text-yellow-400 mt-0.5 text-lg">warning</span>
+<div>
+<h4 class="font-bold text-yellow-800 dark:text-yellow-300 text-sm sm:text-base">Risk Disclosure</h4>
+<p class="text-xs sm:text-sm text-yellow-700 dark:text-yellow-400">All investments carry risk. While this product is 100% security-collateralized, investors should be aware of potential risks including liquidity and market fluctuations. Please review the full strategy pack for a comprehensive risk overview.</p>
+</div>
+</div>
+</div>
+<!-- Bespoke Mandates Section -->
+<div class="flex flex-col gap-4 sm:gap-6 pt-8 sm:pt-12 border-t border-gray-200 dark:border-gray-700">
+<h2 class="text-2xl sm:text-3xl font-bold font-heading text-text-light dark:text-text-dark">Bespoke Mandates</h2>
+<p class="text-sm sm:text-base text-gray-600 dark:text-gray-400 max-w-3xl">For institutional and qualified investors seeking a fully customized approach, we offer bespoke mandates tailored to your unique requirements and risk appetite.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-4">
+<div class="flex flex-col items-center text-center gap-3 p-3 sm:p-4 bg-gray-100 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+<span class="material-symbols-outlined text-2xl sm:text-3xl md:text-4xl text-primary dark:text-secondary">track_changes</span>
+<h4 class="font-bold text-sm sm:text-base">Target Yield</h4>
+<p class="text-xs text-gray-600 dark:text-gray-400">Define your desired return profile.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-3 p-3 sm:p-4 bg-gray-100 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+<span class="material-symbols-outlined text-2xl sm:text-3xl md:text-4xl text-primary dark:text-secondary">date_range</span>
+<h4 class="font-bold text-sm sm:text-base">Investment Tenor</h4>
+<p class="text-xs text-gray-600 dark:text-gray-400">Set the investment horizon that fits your needs.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-3 p-3 sm:p-4 bg-gray-100 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+<span class="material-symbols-outlined text-2xl sm:text-3xl md:text-4xl text-primary dark:text-secondary">trending_down</span>
+<h4 class="font-bold text-sm sm:text-base">Drawdown Tolerance</h4>
+<p class="text-xs text-gray-600 dark:text-gray-400">Establish clear risk and capital preservation parameters.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-3 p-3 sm:p-4 bg-gray-100 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+<span class="material-symbols-outlined text-2xl sm:text-3xl md:text-4xl text-primary dark:text-secondary">summarize</span>
+<h4 class="font-bold text-sm sm:text-base">Reporting SLAs</h4>
+<p class="text-xs text-gray-600 dark:text-gray-400">Customize reporting frequency and format.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-gray-100 dark:bg-gray-800/50 mt-12 sm:mt-16">
+<div class="px-4 sm:px-6 md:px-8 lg:px-20 py-8 sm:py-12 md:py-16 mx-auto max-w-7xl">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 text-center md:text-left">
+<div class="max-w-xl">
+<h2 class="text-2xl sm:text-3xl font-bold font-heading text-text-light dark:text-text-dark">Take the Next Step</h2>
+<p class="mt-2 text-gray-600 dark:text-gray-400 text-sm sm:text-base">Gain deeper insights into our strategies or speak directly with one of our investment specialists.</p>
+</div>
+<div class="flex-shrink-0 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center">
+<a href="contact.html" class="flex min-w-[180px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 sm:h-12 px-4 sm:px-5 bg-secondary text-primary text-sm sm:text-base font-bold leading-normal tracking-wide hover:bg-secondary/90">
+<span class="truncate">Download Strategy Pack</span>
+</a>
+<a href="contact.html" class="flex min-w-[180px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 sm:h-12 px-4 sm:px-5 bg-primary text-white text-sm sm:text-base font-bold leading-normal tracking-wide hover:bg-primary/90">
+<span class="truncate">Schedule a Call</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

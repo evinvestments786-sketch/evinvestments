@@ -35,6 +35,12 @@
             },
         };
     </script>
+<script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -73,13 +79,28 @@
 <a class="text-xs sm:text-sm text-primary dark:text-secondary font-bold" href="#">About</a>
 <a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="contact.html">Contact</a>
 </nav>
+
+<div class="md:hidden">
+<button id="menuBtn" class="material-symbols-outlined text-text-light p-2 text-xl ml-auto" onclick="toggleMobileMenu()">menu</button>
+</div>
+
+ <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 shadow-lg md:hidden z-50">
+        <div class="flex flex-col">
+          <a href="home.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">Home</a>
+          <a href="strategies.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">Strategies</a>
+          <a href="how_it_works.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">How It Works</a>
+          <a href="track_record_&_case_studies.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">Track Record</a>
+          <a href="about.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">About</a>
+          <a href="contact.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+      </div>
+
 <!-- <div class="hidden md:flex items-center gap-1 sm:gap-2">
 <a href="contact.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 sm:h-10 px-3 sm:px-4 bg-primary text-white text-xs sm:text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">Login</a>
 <a href="contact.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 sm:h-10 px-3 sm:px-4 bg-gray-200 dark:bg-gray-700 text-white text-xs sm:text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-gray-600">Sign Up</a>
 </div> -->
-<div class="md:hidden">
-<span class="material-symbols-outlined text-white p-2 text-xl">menu</span>
-</div>
+
 </header>
 <main class="flex-1 pt-16 sm:pt-20">
 <div class="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-4 sm:py-5">

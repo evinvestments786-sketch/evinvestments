@@ -35,11 +35,18 @@
             },
         };
     </script>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
     </style>
+
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
 <div class="relative flex min-h-screen w-full flex-col">
@@ -73,14 +80,30 @@
 <a class="text-xs sm:text-sm font-medium hover:text-primary dark:hover:text-secondary text-[#374151] dark:text-white" href="about.html">About</a>
 <a class="text-xs sm:text-sm text-primary dark:text-secondary font-bold" href="#">Contact</a>
 </nav>
+
+<div class="md:hidden">
+<button id="menuBtn" class="material-symbols-outlined text-text-light p-2 text-xl ml-auto" onclick="toggleMobileMenu()">menu</button>
+</div>
+
+ <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 shadow-lg md:hidden z-50">
+        <div class="flex flex-col">
+          <a href="home.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">Home</a>
+          <a href="strategies.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">Strategies</a>
+          <a href="how_it_works.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">How It Works</a>
+          <a href="track_record_&_case_studies.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">Track Record</a>
+          <a href="about.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 border-b border-gray-100">About</a>
+          <a href="contact.html" class="px-4 py-3 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+      </div>
+
+
 <!-- <div class="hidden md:flex items-center gap-1 sm:gap-2">
 
 <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 sm:h-10 px-3 sm:px-4 bg-gray-200 dark:bg-gray-700 text-[#1f2937] dark:text-white text-xs sm:text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-gray-600">Login</button>
 <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 sm:h-10 px-3 sm:px-4 bg-primary text-white text-xs sm:text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">Sign Up</button>
 </div> -->
-<button class="md:hidden flex items-center justify-center text-[#1f2937] dark:text-white p-2">
-<span class="material-symbols-outlined text-lg">menu</span>
-</button>
+
 </div>
 </div>
 </header>
@@ -94,7 +117,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
 <div class="bg-[#f9fafb] dark:bg-[#1c2127] p-4 sm:p-6 rounded-lg border border-[#e5e7eb] dark:border-[#3b4754]">
 <h3 class="text-lg sm:text-xl font-bold text-[#1f2937] dark:text-white mb-3 sm:mb-4">Request Term Sheet</h3>
-<form action="mailto:info@eagleviewinvestment.com?subject=Request Term Sheet" method="post" enctype="text/plain" netlify>
+<form action="mailto:info@eagleviewinvestment.com?subject=Request Term Sheet" method="post" enctype="text/plain">
 <div class="mb-3 sm:mb-4">
 <label class="block text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name</label>
 <input type="text" name="name" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-white text-sm" required>
@@ -112,7 +135,7 @@
 </div>
 <div class="bg-[#f9fafb] dark:bg-[#1c2127] p-4 sm:p-6 rounded-lg border border-[#e5e7eb] dark:border-[#3b4754]">
 <h3 class="text-lg sm:text-xl font-bold text-[#1f2937] dark:text-white mb-3 sm:mb-4">Speak to an Adviser</h3>
-<form action="mailto:info@eagleviewinvestment.com?subject=Speak to an Adviser" method="post" enctype="text/plain" netlify>
+<form action="mailto:info@eagleviewinvestment.com?subject=Speak to an Adviser" method="post" enctype="text/plain">
 <div class="mb-3 sm:mb-4">
 <label class="block text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name</label>
 <input type="text" name="name" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-white text-sm" required>
@@ -165,4 +188,3 @@
 </div>
 </body>
 </html>
-
